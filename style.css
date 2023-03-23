@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  overflow: hidden;
+ 
 }
 :root {
   --color-primary: rgb(0, 0, 0);
@@ -21,6 +21,7 @@ body {
   color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 #header {
@@ -53,7 +54,7 @@ nav ul li a {
   transition: 0.2s ease-in-out;
 }
 
-nav ul li a:after {
+nav ul li a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -136,4 +137,207 @@ nav ul li a:after {
     bottom: 185px;
     background-color: red;
     border-radius: 25px;
+  }
+
+  /*-----------------------About-----------------*/
+
+  #about{
+    width: 100%;
+    height: 100vh;
+    background-color: #030000;
+    margin: 30px;
+    padding: 30px;
+  }
+
+  .heading h1{
+    
+    text-align: center;
+    font-size: 70px;
+  }
+
+  .heading h1 span{
+    color: red;
+  }
+
+ 
+  .image{
+
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    background: url(images/IMG_20230321_213857~2.jpg);
+    background-size: cover;
+    background-position: top;
+    border-radius: 30px;
+    box-shadow: 5px 10px 10px red;
+  }
+
+  .content{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    justify-content: center;
+    margin: 20px;
+    margin-left: 40px;
+    padding: 50px;
+  }
+
+  .content .para{
+    
+    position: relative;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    bottom: 70px;
+    margin-left: 30px;
+  }
+
+  .content .para  .first{
+    color:yellow;
+  }
+  .content .para span{
+    color: red;
+  }
+
+  .content .para h2{
+    color: yellow;
+    width: fit-content;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: red;
+    
+  }
+
+  .content .para h4{
+    color: yellow;
+    width: fit-content;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: red;
+    
+  }
+
+  .content .para .location{
+    margin-top: 10px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .content .para .mail{
+    margin-top: 10px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .content .para .location .icon
+  {
+    margin-right: 10px;
+  }
+  .content .para .mail .icon
+  {
+    margin-right: 10px;
+  }
+
+  .content .para .button{
+    width:300px;
+    height: 50px;
+    background-color: rgb(255, 40, 7);
+    font-size: 25px;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    font-weight: 500;
+    justify-content: center;
+    position: relative;
+    top: 45px;
+    left: 25px;
+    border-radius: 25px;
+    transition: 0.2s linear;
+  }
+
+  .content .para .button:hover{
+    background-color: yellow;
+    cursor: pointer;
+    color: black;
+  }
+
+  
+  .curve{
+    /* position: absolute; */
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .curve::before{
+    display: block;
+    content: '';
+    /* position:absolute; */
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: red;
+    transform: translate(85% , 60%);
+  }
+  .curve::after{
+    display: block;
+    content: '';
+    /* position:absolute; */
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: yellow;
+    transform: translate(-4% , 40%);
+    z-index: -1;
+  }
+  .svg{
+    width: 100%;
+    height: fit-content;
+    background-color: red;
+  }
+
+.chcek{
+  width: 100%;
+  height: 500px;
+  /* background-color: red; */
+}
+
+  .tab-titles{
+    display: flex;
+    color: white;
+    margin: 20px 0 40px;
+  }
+
+  .tab-links{
+    margin-right: 70px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+
+  .tab-links::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .tab-links:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+  .tab-content ul li{
+    margin: 20px 0;
   }

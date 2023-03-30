@@ -354,7 +354,18 @@ nav ul li a::after {
 .skills .progressbar .react{
   width: 20%;
 }
+
+.skills .progressbar .tooltip{
   
+  background-color: white;
+  position: absolute;
+  top: -10px;
+  font: 12px;
+  right: 0px;
+  transform: translateX(50%);
+
+}
+
 /* .Tabs{
   
   

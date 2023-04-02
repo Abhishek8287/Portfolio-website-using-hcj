@@ -365,8 +365,8 @@ nav ul li a:hover:after {
 }
 .container-p {
   width: 100%;
-  height: 80vh;
-  background: rgba(246, 124, 110, 0.812);
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.812);
   border-radius: 60px;
   color: #000;
   display: flex;
@@ -378,59 +378,106 @@ nav ul li a:hover:after {
 .container-p .heading-p {
   text-align: center;
   margin-top: 0;
-  font-size: 40px;
-  color: rgb(0, 0, 0);
+  font-size: 70px;
+  color: rgb(255, 255, 255);
   font-weight: 900;
-  text-shadow: 2px 2px 1px #000000, -1px -1px 1px #f2ff00, -2px 2px 1px #c0f415,
-    1px -1px 1px #9bc92e;
+  text-shadow: 0 0 13px #FF0000, 0 0 15px #ffdd03;
   text-transform: uppercase;
   transform: none;
   opacity: 1;
   transition: all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;
   letter-spacing: 7px;
+  transition: 0.5s linear;
+}
+
+.container-p .hover-p:hover{
+  cursor: pointer;
+  color: #000000;
+  
 }
 
 .container-p .maincontainer-p {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 .container-p .maincontainer-p .cards {
   /* position: relative; */
-  width: 300px;
-  height: 55vh;
-  background-color: rgb(49, 49, 24);
-  margin: 0 70px;
-  border: 2px solid black;
+  width: 350px;
+  height:60vh;
+  /* background-color: rgb(49, 49, 24); */
+  margin: 0 50px;
+  transform: translateY(90px);
+  overflow: hidden;
   border-radius: 25px;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(247, 255, 3, 0.1);
-  backdrop-filter: blur(10.2px);
-  -webkit-backdrop-filter: blur(10.2px);
-  border: 1px solid rgb(0, 0, 0);
+  z-index: 1;
+  transition: 0.2s;
+  box-shadow: 0px 0 20PX  rgba(222, 222, 222, 0.7);
+}
+.container-p .maincontainer-p .cards:hover{
+  
+  transform: translateY(0px);
+  
+  cursor: pointer;
+  box-shadow: inset 0 0 60px rgb(254, 254, 254),
+              inset 20px 0px 80px #f0f,
+              inset -20px 0px 80px rgb(255, 42, 0),
+              inset 20px 0px 80px #f0f,
+              inset -20px 0px 80px rgb(255, 0, 0),
+              0 0 50px white,
+              -10px 0 50px #f0f,
+              10px 0 80px rgb(255, 0, 0);
+ 
 }
 .maincontainer-p .first {
   background: url(images/1.png);
   background-size: cover;
-  background-position: top;
+  
+  background-position: center;
 }
 .maincontainer-p .second {
-  background: url(images/2.png);
+  background: url(images/5.png);
   background-size: cover;
+  object-fit: none;
   background-repeat: no-repeat;
   background-position: center;
-  /* From https://css.glass */
-  /* background: rgba(255, 72, 72, 0.41); */
+  
   
 }
 .maincontainer-p .third {
-  background: url(images/3.png);
+  background: url(images/4.png);
   background-size: cover;
-  background-position: left center;
+  background-position: left;
 }
 
+
+/*-----------------------------------Contact me section----------------------*/
+
+
+#contact .container-c{
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(178, 178, 178);
+  border-radius: 25px;
+}
+
+.container-c .heading-c{
+  text-align: center;
+  font-size: 60px;
+  
+
+}
+
+.container-c .heading-c .red-c:hover{
+  text-shadow: 0 0 13px #ca4242, 0 0 15px #ffdd03;
+}
+
+.container-c .heading-c span{
+  color: red;
+}
 /* .Tabs{
   
   

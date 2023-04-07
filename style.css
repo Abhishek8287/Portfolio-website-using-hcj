@@ -4,6 +4,9 @@
   box-sizing: border-box;
   list-style: none;
 }
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --color-primary: rgb(0, 0, 0);
   --color-secondary: rgb(255, 255, 255);
@@ -94,6 +97,22 @@ nav ul li a:hover:after {
 
 .details span {
   color: yellow;
+}
+
+.details .info #cursor{
+  color: rgb(182, 247, 16);
+  animation: blink 1s linear infinite;
+  font-weight: bolder;
+}
+
+@keyframes blink {
+  0%{
+    opacity: 100%;
+  }
+  50%{
+    opacity: 0%;
+  }
+  
 }
 .details .redd{
   color: red;
@@ -465,17 +484,18 @@ a{
 }
 
 .container-p .maincontainer-p .cards {
-  /* position: relative; */
-  width: 10vw;
+ 
+  width: 20vw;
   height:60vh;
-  /* background-color: rgb(49, 49, 24); */
+
   margin: 0 50px;
-  transform: translateY(90px);
+  transform: translateY(40px);
   overflow: hidden;
   border-radius: 25px;
   z-index: 1;
-  transition: 0.2s;
+  transition: 1s;
   box-shadow: 0px 0 20PX  rgb(255, 255, 255);
+  
 }
 .container-p .maincontainer-p .cards:hover{
   
@@ -485,13 +505,65 @@ a{
   box-shadow: 5px 12px 25px rgb(255, 255, 255)
  
 }
-.maincontainer-p .first {
-  background: url(images/1.png);
-  background-size: cover;
-  
-  background-position: center;
+
+.maincontainer-p .cards .img-cls{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
-.maincontainer-p .second {
+
+.maincontainer-p .cards .cardbody{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  display: flex;
+  z-index: 3;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s ;
+}
+
+.cards:hover .cardbody{
+  right: 0;
+}
+.maincontainer-p .cards .cardbody .header-p{
+  font-size: 2rem;
+  font-weight: 600px;
+  margin: auto;
+}
+
+.maincontainer-p .cards .cardbody .btn-p{
+  padding:10px 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 500px;
+  border-radius: 10px;
+  background-color: black;
+  
+}
+
+.maincontainer-p .cards .cardbody .btn-p a{
+  text-decoration: none;
+  color: rgb(255, 10, 10);
+  font-size: 20px;
+}
+
+.maincontainer-p .cards .cardbody .btn-p:hover{
+  background-color: white;
+  box-shadow: 0 0 25px white;
+  
+}
+
+
+
+
+/* .maincontainer-p .second {
   background: url(images/5.png);
   background-size: cover;
   object-fit: none;
@@ -499,12 +571,12 @@ a{
   background-position: center;
   
   
-}
-.maincontainer-p .third {
+} */
+/* .maincontainer-p .third {
   background: url(images/4.png);
   background-size: cover;
-  background-position: left;
-}
+  background-position: left; */
+
 
 
 /*-----------------------------------Contact me section----------------------*/

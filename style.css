@@ -21,6 +21,7 @@ body {
   transition: all 0.4s ease-in-out;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  text-decoration: none;
 }
 
 #header {
@@ -81,26 +82,35 @@ nav ul li a:hover:after {
 }
 
 .details {
-  margin-top: 15%;
-  margin-left: 8%;
+  margin: 5vw;
+  display: flex;
+
 }
 
 .details h1 {
   margin-bottom: 5px;
+  letter-spacing: 1;
 }
 
 .details span {
   color: yellow;
 }
-
+.details .redd{
+  color: red;
+}
 .details p {
+  line-height: 2;
+  word-break: 1;
   font-weight: 100px;
 }
 
-.blob {
-  position: relative;
-  left: 60%;
-  bottom: 250px;
+
+
+.details .blob {
+  /* position: relative;
+  left: 60px;
+  bottom: 250px; */
+  margin:  0 5vw;
   width: 500px;
   height: 500px;
   background: url(images/IMG_20230316_232717_111-removebg-preview.png);
@@ -127,24 +137,63 @@ nav ul li a:hover:after {
   }
 }
 
-.border1 {
-  width: 100vw;
-  height: 15px;
-  background-color: yellow;
-  position: relative;
-  bottom: 185px;
-  border-radius: 25px;
+
+#header{
+  border-bottom: 10px solid red;
+  border-radius: 2vw;
+  outline: 10px solid yellow;
+
 }
 
-.border2 {
-  width: 100vw;
-  height: 15px;
-  position: relative;
-  bottom: 185px;
-  background-color: red;
-  border-radius: 25px;
+.details .media{
+  display: flex;
+  
+  
+  margin: 8vw 0;
+  width: 50vw;
+  height: 40vh;
+  /* background-color: yellow; */
 }
 
+.details .marginm{
+  margin: 0 3vw;
+}
+
+.details .color {
+  color: white;
+}
+
+.details .bluem:hover{
+  color: rgba(35, 35, 227, 0.82);
+  box-shadow: 0 0 20px white;
+  background-color: white;
+  border-radius: 50px;
+}
+.details .bluen:hover{
+  color: rgba(35, 35, 227, 0.82);
+  box-shadow: 0 0 20px white;
+  background-color: white;
+  
+}
+.details .purplem:hover{
+  color: rgba(160, 8, 236, 0.82);
+  box-shadow: 0 0 20px white;
+  background-color: white;
+  border-radius: 15px;
+  
+}
+.details .blackm:hover{
+  color: rgba(0, 0, 0, 0.82);
+  box-shadow: 0 0 20px white;
+  background-color: white;
+  border-radius: 50px;
+  
+}
+
+
+a{
+  text-decoration: none;
+}
 /*-----------------------About-----------------*/
 
 #about {
@@ -262,24 +311,26 @@ nav ul li a:hover:after {
 
 .svg {
   width: 100%;
+  background-color: rgba(213, 51, 51, 0.895);
 
-  background: rgb(131, 58, 180);
+  /* background: rgb(131, 58, 180);
   background: linear-gradient(
     90deg,
     rgba(131, 58, 180, 1) 0%,
     rgba(253, 29, 29, 1) 78%,
     rgba(252, 176, 69, 0.9641106442577031) 100%
-  );
+  ); */
 }
-
+/* <------------------Skills---------------> */
 .skills {
   background: rgb(131, 58, 180);
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(131, 58, 180, 1) 0%,
     rgba(253, 29, 29, 1) 78%,
     rgba(252, 176, 69, 0.9641106442577031) 100%
-  );
+  ); */
+  background-color: rgba(213, 51, 51, 0.895);
   width: 100%;
   height: 100vh;
   border-radius: 0 0 60px 60px;
@@ -381,7 +432,7 @@ nav ul li a:hover:after {
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
-  padding: 30px;
+  padding: 2vw;
 }
 
 .container-p .heading-p {
@@ -415,7 +466,7 @@ nav ul li a:hover:after {
 
 .container-p .maincontainer-p .cards {
   /* position: relative; */
-  width: 350px;
+  width: 10vw;
   height:60vh;
   /* background-color: rgb(49, 49, 24); */
   margin: 0 50px;
@@ -424,18 +475,14 @@ nav ul li a:hover:after {
   border-radius: 25px;
   z-index: 1;
   transition: 0.2s;
-  box-shadow: 0px 0 20PX  rgba(222, 222, 222, 0.7);
+  box-shadow: 0px 0 20PX  rgb(255, 255, 255);
 }
 .container-p .maincontainer-p .cards:hover{
   
   transform: translateY(0px);
   
   cursor: pointer;
-  box-shadow: inset 0 0 60px rgb(254, 254, 254),
-              
-              0 0 50px white,
-              -10px 0 50px rgba(171, 50, 44, 0.868),
-              10px 0 80px rgba(171, 39, 39, 0.916);
+  box-shadow: 5px 12px 25px rgb(255, 255, 255)
  
 }
 .maincontainer-p .first {

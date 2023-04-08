@@ -122,6 +122,38 @@ nav ul li a:hover:after {
   word-break: 1;
   font-weight: 100px;
 }
+.container-h{
+  width: 100%;
+  overflow: hidden;
+}
+.container-h .text{
+  position: relative;
+  color: #e03315da;
+  font-size: 30px;
+  font-weight: 600;
+}
+.container-h .text.first-text{
+  color: #FFF;
+}
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  border-left: 5px solid #f7e308;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+  40%, 60%{
+      left: calc(100% + 4px);
+  }
+  100%{
+      left: 0%;
+  }
+}
 
 
 

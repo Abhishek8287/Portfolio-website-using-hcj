@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width , initial-scale=1.0" />
     <title>hii👋This is my Portfolio Website</title>
     <link rel="Stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +22,7 @@
     />
   </head>
   <body>
-    <div id="header">
+    <div id="header" data-aos="zoom-in">
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -35,8 +36,10 @@
       <div class="details">
         <div class="info">
           <h1>Hi I'm Abhishek <span>Singh</span></h1>
-          <h2>I'm  a <span id="sentence"></span><span id="cursor">|</span></h2>
-          <br />
+          <div class="container-h">
+            <span class="text first-text">I'm a </span>
+            <span class="text sec-text">Front-end Developer</span>
+        </div>
           <p>
             This is my official <span class="redd">portfolio</span> website 
             to <br>showcase my skills and work in <span>web Development</span><br>
@@ -65,7 +68,7 @@
 
     
     <!-- -------------------------------------------about -->
-    <div id="about">
+    <div id="about" data-aos="fade-up">
       
       <div class="heading">
         <h1><span>About</span> Me</h1>
@@ -76,7 +79,7 @@
         <div class="image"></div>
         <div class="para">
           <p>
-            I am <span class="first">Abhishek</span> Singh on this side , very
+            I am <span class="first">Abhishek</span> Singh very
             much passionate about<br />
             learning and working with new programming languages and<br />
             making responsive and creative <span>websites and web apps.</span>
@@ -98,83 +101,85 @@
           </div>
         </div>
       </div>
-      <div class="svg">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="black"
-            fill-opacity="1"
-            d="M0,96L26.7,96C53.3,96,107,96,160,122.7C213.3,149,267,203,320,224C373.3,245,427,235,480,208C533.3,181,587,139,640,112C693.3,85,747,75,800,90.7C853.3,107,907,149,960,154.7C1013.3,160,1067,128,1120,144C1173.3,160,1227,224,1280,250.7C1333.3,277,1387,267,1413,261.3L1440,256L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
-          ></path>
-        </svg>
-      </div>
-      <section></section>
-      <div class="skills">
-        <div class="heading-s">
-          <h1>Skills</h1>
+      <section data-aos="fade-right">
+        <div class="svg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="black"
+              fill-opacity="1"
+              d="M0,96L26.7,96C53.3,96,107,96,160,122.7C213.3,149,267,203,320,224C373.3,245,427,235,480,208C533.3,181,587,139,640,112C693.3,85,747,75,800,90.7C853.3,107,907,149,960,154.7C1013.3,160,1067,128,1120,144C1173.3,160,1227,224,1280,250.7C1333.3,277,1387,267,1413,261.3L1440,256L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+            ></path>
+          </svg>
         </div>
-        <div class="main-container">
-          <div class="content-s">
-            <p><span>javascript</span></p>
-            <div class="progressbar">
-              <div class="skillbar javascript">
-                <div class="tooltip"><p>50%</p></div>
+        <!---------Skills-->
+        <div class="skills" >
+          <div class="heading-s">
+            <h1>Skills</h1>
+          </div>
+          <div class="main-container">
+            <div class="content-s">
+              <p><span>javascript</span></p>
+              <div class="progressbar">
+                <div class="skillbar javascript">
+                  <div class="tooltip"><p>50%</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="content-s">
+              <p><span>C </span></p>
+              <div class="progressbar">
+                <div class="skillbar C">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="content-s">
+              <p><span>C++ </span></p>
+              <div class="progressbar">
+                <div class="skillbar Cpp">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="content-s">
+              <p><span>react </span></p>
+              <div class="progressbar">
+                <div class="skillbar react">
+                  
+                </div>
               </div>
             </div>
           </div>
-          <div class="content-s">
-            <p><span>C </span></p>
-            <div class="progressbar">
-              <div class="skillbar C">
-                <div class="tooltip"></div>
-              </div>
-            </div>
-          </div>
-          <div class="content-s">
-            <p><span>C++ </span></p>
-            <div class="progressbar">
-              <div class="skillbar Cpp">
-                <div class="tooltip"></div>
-              </div>
-            </div>
-          </div>
-          <div class="content-s">
-            <p><span>react </span></p>
-            <div class="progressbar">
-              <div class="skillbar react">
-                <div class="tooltip"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+        </div> 
+      </section>
+      
       <!---------------project section------------>
 
-      <section class="project" id="Project">
+      <section class="project" id="Project" data-aos="fade-up">
         <div class="container-p">
           <div class="heading-p">
             <span class="hover-p">Project</span>
           </div>
           <div class="maincontainer-p">
-            <div class="cards ">
+            <div class="cards " >
               <img src="/images/1.png" class="img-cls" alt="image">
               <div class="cardbody">
                 <span class="header-p"><h1>Live Clock</h1></span>
-                <button class="btn-p"><span class="whitep"><a href="#">Project</a></span></button>
+                <button class="btn-p"><span class="whitep"><a href="https://github.com/Abhishek8287/clock">Project</a></span></button>
               </div>
             </div>
             <div class="cards ">
               <img src="/images/2.png" class="img-cls" alt="image">
               <div class="cardbody">
                 <span class="header-p"><h1>Tic-Tac-Toe game</h1></span>
-                <button class="btn-p"><span class="whitep"><a href="#">Project</a></span></button>
+                <button class="btn-p"><span class="whitep"><a href="https://github.com/Abhishek8287/Tic-tac-toe-game">Project</a></span></button>
               </div>
             </div>
             <div class="cards">
               <img src="/images/6.png" class="img-cls" alt="image">
               <div class="cardbody">
                 <span class="header-p"><h1>Web shooter game</h1></span>
-                <button class="btn-p"><span class="whitep"><a href="#">Project</a></span></button>
+                <button class="btn-p"><span class="whitep"><a href="https://github.com/Abhishek8287/shooter-game">Project</a></span></button>
               </div>
             </div>
           </div>
@@ -183,7 +188,7 @@
      
 
       <!---------------------Contact Me section-->
-      <section id="contact">
+      <section id="contact" data-aos="fade-right">
         <div class="container-c">
           <div class="heading-c">
             <h2 data-outline="contact">
@@ -262,6 +267,15 @@
         </footer>
       </section>
     </div>
-    <script src="index.html"></script>
+    <script src="index.js"></script>
+    
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 400,
+          duration: 1000
+
+        })
+      </script>
   </body>
 </html>

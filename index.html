@@ -21,19 +21,24 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
-    <div id="header" data-aos="zoom-in">
+  <body >
+    
+
+    
+    <div id="header" data-aos="zoom-in" >
+      <div id="particles-js"></div>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
 
           <li><a href="#Project">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="details">
+      <div class="details" >
         <div class="info">
           <h1>Hi I'm Abhishek <span>Singh</span></h1>
           <div class="container-h">
@@ -46,7 +51,7 @@
           
           I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
 
-          <div class="media">
+          <div class="media" >
             <div class="instagram marginm">
               <a href="https://www.instagram.com/abhisheksingh_8287/"><i class="fa-brands fa-instagram fa-4x color purplem"></i></a>
             </div>
@@ -65,13 +70,11 @@
       </div>
       
     </div>
-
-    
-    <!-- -------------------------------------------about -->
-    <div id="about" data-aos="fade-up">
-      
+    <!-- -------------------------------------------about --------------------------------------------->
+    <section id="about" data-aos="fade-left" id="particles-js">
       <div class="heading">
-        <h1><span>About</span> Me</h1>
+        <div class="head"><h1><span>About</span> Me</h1></div>
+        <div class="icona"><lord-icon src="https://cdn.lordicon.com/zthozvfn.json" trigger="loop" style="width:100px;height:100px;position: relative;top: 20px;"></lord-icon></div>
       </div>
       <div class="content">
         <!-- <img src="images/IMG_20230321_213857~2.jpg" alt="Image"> -->
@@ -80,9 +83,10 @@
         <div class="para">
           <p>
             I am <span class="first">Abhishek</span> Singh very
-            much passionate about<br />
-            learning and working with new programming languages and<br />
-            making responsive and creative <span>websites and web apps.</span>
+            much passionate about learning and working with new programming languages.<br />
+            I have a good hold on <span>data structure and Algorithm</span>, I love coding and have an interest in building
+            responsive and good looking <span>websites and web apps.</span>
+            currently I'm learning React to build better UI of websites.
           </p>
           <h2>Age:19</h2>
           <h4>Nationality: Indian</h4>
@@ -97,11 +101,13 @@
             <p>singhabhishek@gmail.com</p>
           </div>
           <div class="button">
-            <p>Send me a hiii👋👋</p>
+            <button><a href="#contact">Send me a hiii👋👋</a></button>
+            
           </div>
         </div>
       </div>
-      <section data-aos="fade-right">
+   </section>
+      <section  id="skills" data-aos="fade-right">
         <div class="svg">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
@@ -111,10 +117,10 @@
             ></path>
           </svg>
         </div>
-        <!---------Skills-->
+        <!--------------------------------------------Skills------------------------------------------------>
         <div class="skills" >
           <div class="heading-s">
-            <h1>Skills</h1>
+            <div class="heads"><h1>Skills</h1></div>
           </div>
           <div class="main-container">
             <div class="content-s">
@@ -155,10 +161,19 @@
       
       <!---------------project section------------>
 
-      <section class="project" id="Project" data-aos="fade-up">
+      <section  id="Project" data-aos="fade-right" >
+        
+       
         <div class="container-p">
+          <div id="particles-js"></div>
           <div class="heading-p">
             <span class="hover-p">Project</span>
+            <div class="iconeye"><lord-icon
+              src="https://cdn.lordicon.com/pvucrfqe.json"
+              trigger="loop"
+              style="width:100px;height:100px;position: relative; top: 20px;">
+          </lord-icon>
+          </div>
           </div>
           <div class="maincontainer-p">
             <div class="cards " >
@@ -194,10 +209,16 @@
             <h2 data-outline="contact">
               <span class="red-c">Get in</span>Touch
             </h2>
+            <div class="iconc"><lord-icon
+              src="https://cdn.lordicon.com/oaflahpk.json"
+              trigger="loop"
+              style="width:100px;height:100px;position: relative;top: 20px;">
+            </lord-icon>
+          </div>
           </div>
           <div class="main-c">
             <div class="contactinfo">
-              <form class="form">
+              <form  action="https://formspree.io/f/xrgvorgo" method="POST">
                 <div class="name common down">
                   <input
                     type="text"
@@ -210,9 +231,10 @@
                 </div>
                 <div class="gmail common down">
                   <input
+                    id="gmail"
                     type="text"
                     class="take"
-                    name="Name"
+                    name="Gmail"
                     placeholder="Gmail"
                     required
                   />
@@ -222,7 +244,7 @@
                   <input
                     type="text"
                     class="take"
-                    name="Name"
+                    name="Contact number"
                     placeholder="Contact number"
                     required
                   />
@@ -231,13 +253,15 @@
                 <div class="Message">
                   <textarea
                     class="extra"
+                    name="Message"
                     placeholder="Enter your message"
                   ></textarea>
                 </div>
+                <div class="button-c">
+                  <button class="btn">Send</button>
+                </div>
               </form>
-              <div class="button-c">
-                <button class="btn">Send</button>
-              </div>
+              
             </div>
             <div class="map">
               <iframe
@@ -268,7 +292,9 @@
       </section>
     </div>
     <script src="index.js"></script>
-    
+      <script src="particles.js"></script>
+      <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+      <script src="app.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         AOS.init({

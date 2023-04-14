@@ -10,11 +10,8 @@ const textLoad = () => {
   setTimeout(() => {
     text.textContent = "Gamer";
   }, 8000);
-   //1s = 1000 milliseconds
-   
+  //1s = 1000 milliseconds
 };
 
 textLoad();
 setInterval(textLoad, 12000);
-
-

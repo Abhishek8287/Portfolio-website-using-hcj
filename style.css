@@ -402,15 +402,13 @@ a {
 .skills .heading-s {
   text-align: center;
   margin-top: 0;
-  font-size: 40px;
-  color: rgb(0, 0, 0);
+  font-size: 50px;
+  color: rgb(245, 245, 245);
   font-weight: 900;
-  text-shadow: 2px 2px 1px #e1dd63, -1px -1px 1px #d14747, -2px 2px 1px #e12222,
-    1px -1px 1px #9bc92e;
-  text-transform: uppercase;
-  transform: none;
-  opacity: 1;
-  transition: all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills .heading-s h1 {
@@ -425,64 +423,129 @@ a {
   padding: 10px 20px;
   /* position: relative; */
   width: 100%;
-  height: 80vh;
+  height: 60vh;
 }
 
 .skills .main-container .content-s {
-  margin: 25px 0;
+  margin-top: 25px;
   width: 100%;
 }
 
-.skills .main-container .content-s {
+/* .skills .main-container .content-s {
   width: 100%;
   color: yellow;
   margin: 70px 0px;
-}
+} */
 
-.skills .main-container .content-s .progressbar {
+.skills .detailss-h {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.skills .detailss-c {
   width: 90%;
-  /* background-color: #e12222; */
-  border: 2px solid rgba(255, 0, 0, 0.25);
-  margin-top: 20px;
-  height: 8px;
-  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.skills .detailss-j {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.skills .detailss-r {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.skills .main-container .content-s .progressbar .skillbar {
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 78%,
-    rgba(252, 176, 69, 0.9641106442577031) 100%
-  );
-  border-radius: 2px;
-  height: 8px;
+/* .skills .detailss .progressbar {
+  position: relative;
+  border: 2px solid red;
+  border-radius: 20px;
+} */
+
+.skills .progressbar {
+  border: 2px solid red;
+  border-radius: 2vw;
 }
 
-.skills .progressbar .javascript {
-  width: 50%;
-}
-.skills .progressbar .C {
+.progressbar .html-bar {
+  position: relative;
   width: 100%;
+  height: 9px;
+  border-radius: 10px;
+  background-color: yellow;
+  animation: html 2s linear;
 }
-.skills .progressbar .Cpp {
-  width: 100%;
+.progressbar .css-bar {
+  position: relative;
+  width: 90%;
+  height: 9px;
+  border-radius: 10px;
+  background-color: yellow;
+  animation: css 2s linear;
+}
+.progressbar .java-bar {
+  position: relative;
+  width: 70%;
+  height: 9px;
+  border-radius: 10px;
+  background-color: yellow;
+  animation: java 2s linear;
+}
+.progressbar .react-bar {
+  position: relative;
+  width: 30%;
+  height: 9px;
+  border-radius: 10px;
+  background-color: yellow;
+  animation: react 2s linear;
 }
 
-.skills .progressbar .react {
-  width: 20%;
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 30%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 30%;
+  }
 }
 
-.skills .progressbar .tooltip {
-  background-color: white;
-  position: absolute;
-
-  font: 12px;
-  right: 100%;
-  /* transform: ; */
-}
-
+/*--------------------------------project----------------*/
 .project {
   background-color: #000000;
 }

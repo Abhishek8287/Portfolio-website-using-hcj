@@ -40,7 +40,7 @@ const scrollElement = document.getElementById("scrolltop");
 scrollElement.addEventListener("click", scrolltoTop);
 
 //-------------------------------------playing music--------------------
-const audio = new Audio("music/1.mp3");
+const audio = new Audio("music/second.mp3");
 const musicElement = document.getElementById("music");
 var count = 0;
 const playMusic = () => {
